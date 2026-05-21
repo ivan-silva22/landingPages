@@ -1,0 +1,313 @@
+/* Header.css */
+
+.custom-navbar {
+  background-color: rgba(
+    15,
+    23,
+    42,
+    0.9
+  ) !important; /* Azul oscuro con transparencia */
+  backdrop-filter: blur(10px); /* Efecto vidrio esmerilado */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1rem 0;
+}
+
+.brand-logo {
+  font-weight: 800;
+  letter-spacing: -1px;
+  font-size: 1.5rem;
+}
+
+.brand-logo span {
+  color: #0dcaf0; /* El color info de Bootstrap */
+}
+
+.nav-item-link {
+  color: #cbd5e1 !important;
+  font-weight: 500;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-item-link:hover {
+  color: #0dcaf0 !important;
+}
+
+.btn-presupuesto {
+  font-weight: 700;
+  padding: 8px 20px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  box-shadow: 0 4px 15px rgba(13, 202, 240, 0.2);
+}
+
+/* Ajuste para el menú móvil */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background-color: #0f172a;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 12px;
+  }
+
+  .nav-item-link {
+    padding: 15px 0 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .btn-presupuesto {
+    width: 100%;
+    margin-top: 15px;
+  }
+}
+
+
+
+
+/* Hero.css */
+
+.hero-layout {
+    min-height: 100vh;
+    background-color: #0f172a; /* Fondo Slate 900 */
+    background-image: 
+        radial-gradient(at 0% 0%, rgba(13, 202, 240, 0.15) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(13, 202, 240, 0.1) 0px, transparent 50%);
+    padding-top: 100px;
+}
+
+.hero-text-content h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem); /* Tipografía fluida */
+    letter-spacing: -2px;
+    line-height: 1.1;
+}
+
+.hero-text-content p {
+    font-size: 1.2rem;
+    max-width: 90%;
+    border-left: 3px solid #0dcaf0;
+    padding-left: 20px;
+}
+
+.btn-main-call {
+    background-color: #0dcaf0;
+    border: none;
+    padding: 18px 40px;
+    font-weight: 800;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.btn-main-call:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(13, 202, 240, 0.4);
+    background-color: #0baccc;
+}
+
+/* Contenedor Visual */
+.hero-visual-container {
+    position: relative;
+    padding: 20px;
+}
+
+.glow-effect {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle, rgba(13, 202, 240, 0.2) 0%, transparent 70%);
+    z-index: 0;
+}
+
+.hero-mockup {
+    position: relative;
+    z-index: 1;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+    animation: floatingHero 4s ease-in-out infinite;
+}
+
+@keyframes floatingHero {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+/* Mobile Adjustments */
+@media (max-width: 991px) {
+    .hero-layout {
+        text-align: center;
+        padding-top: 140px;
+    }
+    .hero-text-content p {
+        border-left: none;
+        padding-left: 0;
+        margin: 0 auto 2rem;
+    }
+    .hero-actions {
+        justify-content: center;
+    }
+}
+
+
+
+/* Features.css */
+
+.features-section {
+    background-color: #0f172a; /* Mismo fondo para continuidad */
+    position: relative;
+}
+
+.underline {
+    width: 60px;
+    height: 4px;
+    background-color: #0dcaf0;
+    margin-top: 15px;
+    border-radius: 2px;
+}
+
+.feature-card {
+    background: rgba(30, 41, 59, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.feature-card:hover {
+    background: rgba(30, 41, 59, 0.8);
+    transform: translateY(-5px);
+    border-color: rgba(13, 202, 240, 0.3);
+}
+
+.icon-container {
+    background: rgba(13, 202, 240, 0.1);
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover .icon-container {
+    background: #0dcaf0;
+    color: #0f172a !important;
+}
+
+
+
+/* Pricing.css */
+.pricing-section {
+    background-color: #0f172a;
+}
+
+.pricing-card {
+    background-color: #1e293b !important;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.price-container .amount {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.price-container .currency {
+    font-size: 1.5rem;
+    vertical-align: top;
+    margin-right: 5px;
+}
+
+.pricing-card-wrapper.featured {
+    transform: scale(1.05);
+    z-index: 2;
+}
+
+.pricing-card-wrapper.featured .pricing-card {
+    border: 2px solid #0dcaf0;
+    box-shadow: 0 20px 40px rgba(13, 202, 240, 0.15) !important;
+}
+
+.popular-badge {
+    background-color: #0dcaf0;
+    color: #0f172a;
+    font-size: 0.75rem;
+    font-weight: 800;
+    padding: 5px 20px;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    letter-spacing: 1px;
+}
+
+.feature-list li {
+    font-size: 0.95rem;
+}
+
+@media (max-width: 991px) {
+    .pricing-card-wrapper.featured {
+        transform: scale(1);
+        margin: 2rem 0;
+    }
+}
+
+
+/* Footer.css */
+.main-footer {
+    background-color: #0b1222; /* Un tono más oscuro que el fondo para dar profundidad */
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-brand {
+    font-weight: 800;
+    font-size: 1.4rem;
+    color: #fff;
+    letter-spacing: -1px;
+}
+
+.footer-brand span {
+    color: #0dcaf0;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #0dcaf0;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background: rgba(30, 41, 59, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: #0dcaf0;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background: #0dcaf0;
+    color: #0f172a;
+    transform: translateY(-3px);
+}
