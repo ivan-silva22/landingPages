@@ -40,12 +40,4 @@ src/
 │       └── Pricing.jsx      # Planes de inversión con foco en financiación
 ├── App.jsx                  # Configuración central del Router y envoltura semántica
 ├── App.css                  # Estilos globales y configuraciones de scroll smooth
-└── main.jsx                 # Punto de entrada de la aplicación ``` 
-
-## Autor
-
-Ivan Silva - Software Developer
-
-Contacto Directo: silvaivan280@gmail.com | +54 9 3865 692626
-
-Emprendimiento / Marca: PIXELSTUDIO
+└── main.jsx                 # Punto de entrada de la aplicación 
