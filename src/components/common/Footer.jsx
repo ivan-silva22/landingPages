@@ -22,8 +22,7 @@ const Footer = () => {
             </p>
             {/* Centrado de iconos en móvil con justify-content-center */}
             <div className="social-links d-flex justify-content-center justify-content-md-start gap-3 mt-4">
-              <a href="https://instagram.com" className="social-icon" target="_blank" rel="noreferrer"><Instagram /></a>
-              <a href="https://linkedin.com" className="social-icon" target="_blank" rel="noreferrer"><Linkedin /></a>
+              <a href="https://instagram.com/@pixelstudio.soft" className="social-icon" target="_blank" rel="noreferrer"><Instagram /></a>
               <a href="https://wa.me/5493865692626" className="social-icon" target="_blank" rel="noreferrer"><Whatsapp /></a>
             </div>
           </Col>
