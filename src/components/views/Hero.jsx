@@ -6,7 +6,8 @@ const Hero = () => {
     <section id="inicio" className="hero-layout d-flex align-items-center">
       <Container>
         <Row className="align-items-center">
-          <Col lg={7} className="hero-text-content">
+          {/* Cambié lg={7} por lg={7} md={12} para asegurar el comportamiento responsive */}
+          <Col lg={7} md={12} className="hero-text-content mb-5 mb-lg-0">
             <header>
               <Badge bg="info" className="mb-3 px-3 py-2 text-dark fw-bold">
                 TRANSFORMACIÓN DIGITAL PARA EMPRESAS
@@ -33,7 +34,8 @@ const Hero = () => {
             </footer>
           </Col>
           
-          <Col lg={5} className="d-none d-lg-block text-center">
+          {/* CORRECCIÓN ACÁ: Eliminé 'd-none d-lg-block' para que sea visible en móviles */}
+          <Col lg={5} md={12} className="text-center">
             <div className="hero-visual-container">
               <div className="glow-effect"></div>
               <img 
