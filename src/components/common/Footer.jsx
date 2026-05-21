@@ -8,7 +8,9 @@ const Footer = () => {
   return (
     <footer className="main-footer pt-5 pb-3">
       <Container>
-        <Row className="gy-4 mb-5">
+        {/* Cambiado text-center a nivel general y text-md-start para pantallas grandes */}
+        <Row className="gy-4 mb-5 text-center text-md-start">
+          
           {/* Columna Marca */}
           <Col lg={4} md={6}>
             <div className="footer-brand mb-3">
@@ -18,7 +20,8 @@ const Footer = () => {
               Soluciones de software y transformación digital. <br />
               Desarrollamos herramientas de alto rendimiento para empresas y organizaciones que buscan liderar en la era digital.
             </p>
-            <div className="social-links d-flex gap-3 mt-4">
+            {/* Centrado de iconos en móvil con justify-content-center */}
+            <div className="social-links d-flex justify-content-center justify-content-md-start gap-3 mt-4">
               <a href="https://instagram.com" className="social-icon" target="_blank" rel="noreferrer"><Instagram /></a>
               <a href="https://linkedin.com" className="social-icon" target="_blank" rel="noreferrer"><Linkedin /></a>
               <a href="https://wa.me/5493865692626" className="social-icon" target="_blank" rel="noreferrer"><Whatsapp /></a>
@@ -29,7 +32,7 @@ const Footer = () => {
           <Col lg={2} md={6} className="ps-lg-5">
             <h5 className="text-white fw-bold mb-4">Navegación</h5>
             <ul className="list-unstyled footer-links">
-                <li><a href="#inicio">Nosotros</a></li>
+              <li><a href="#inicio">Nosotros</a></li>
               <li><a href="#soluciones">Servicios</a></li>
               <li><a href="#precios">Planes de Inversión</a></li>
             </ul>
@@ -39,15 +42,16 @@ const Footer = () => {
           <Col lg={3} md={6}>
             <h5 className="text-white fw-bold mb-4">Canales Directos</h5>
             <address className="text-secondary small">
-              <div className="d-flex align-items-center mb-3">
+              {/* Centrado de los bloques de contacto en móvil con justify-content-center */}
+              <div className="d-flex align-items-center justify-content-center justify-content-md-start mb-3">
                 <EnvelopeAtFill className="text-info me-2" />
                 <span>silvaivan280@gmail.com</span>
               </div>
-              <div className="d-flex align-items-center mb-3">
+              <div className="d-flex align-items-center justify-content-center justify-content-md-start mb-3">
                 <Whatsapp className="text-info me-2" />
                 <span>+54 9 3865 692626</span>
               </div>
-              <div className="d-flex align-items-center">
+              <div className="d-flex align-items-center justify-content-center justify-content-md-start">
                 <GeoAltFill className="text-info me-2" />
                 <span>Tucumán, Argentina</span>
               </div>
@@ -55,7 +59,8 @@ const Footer = () => {
           </Col>
 
           {/* Columna Call to Action rápido */}
-          <Col lg={3} md={6} className="text-lg-end">
+          {/* Cambiado text-lg-end por text-md-start y text-lg-end para mantener la armonía */}
+          <Col lg={3} md={6} className="text-center text-md-start text-lg-end">
             <h5 className="text-white fw-bold mb-4">¿Iniciamos tu proyecto?</h5>
             <p className="text-secondary small">Solicitá un presupuesto a medida y recibí asesoramiento técnico especializado.</p>
             <a href="https://wa.me/5493865692626" className="btn btn-info btn-sm fw-bold px-4 py-2 mt-2">
