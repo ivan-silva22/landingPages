@@ -40,7 +40,7 @@ src/
 │       └── Pricing.jsx      # Planes de inversión con foco en financiación
 ├── App.jsx                  # Configuración central del Router y envoltura semántica
 ├── App.css                  # Estilos globales y configuraciones de scroll smooth
-└── main.jsx                 # Punto de entrada de la aplicación
+└── main.jsx                 # Punto de entrada de la aplicación ``` 
 
 ## Autor
 
