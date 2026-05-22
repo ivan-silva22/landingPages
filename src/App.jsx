@@ -10,6 +10,7 @@ import Footer from './components/common/Footer';
 import Hero from './components/views/Hero';
 import Features from './components/views/Features';
 import Pricing from './components/views/Pricing';
+import Projects from './components/views/Projects';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
               <>
                 <div id="home"><Hero /></div>
                 <div id="soluciones"><Features /></div>
+                <div id="proyectos"><Projects /></div>
                 <div id="precios"><Pricing /></div>
               </>
             } />

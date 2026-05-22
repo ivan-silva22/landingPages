@@ -63,8 +63,8 @@ const Footer = () => {
             <h5 className="text-white fw-bold mb-4">¿Iniciamos tu proyecto?</h5>
             <p className="text-secondary small">Solicitá un presupuesto a medida y recibí asesoramiento técnico especializado.</p>
             <a href="https://wa.me/5493865692626" className="btn btn-info btn-sm fw-bold px-4 py-2 mt-2">
-              HABLAR CON UN EXPERTO
-            </a>
+              Contacto Directo
+            </a> 
           </Col>
         </Row>
 

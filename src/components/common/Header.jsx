@@ -16,6 +16,7 @@ const Header = () => {
             <Nav className="ms-auto align-items-center">
                 <Nav.Link href="#inicio" className="nav-item-link px-3">Inicio</Nav.Link>
               <Nav.Link href="#soluciones" className="nav-item-link px-3">Soluciones</Nav.Link>
+              <Nav.Link href="#proyectos" className="nav-item-link px-3">Proyectos</Nav.Link>
               <Nav.Link href="#precios" className="nav-item-link px-3">Planes</Nav.Link>
               
               
