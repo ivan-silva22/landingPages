@@ -41,7 +41,7 @@ const Projects = () => {
           </Badge>
           <h2 className="text-white display-5 fw-bold">
             Soluciones Implementadas
-          </h2>
+          </h2> 
         </header>
 
         <Row className="g-4">
